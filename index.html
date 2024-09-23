@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ページタイトル</title>
+    <meta name="description" content="ページの説明" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon/webclipicon -->
+    <!-- <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="webclip.png" /> -->
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website or article" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="URL" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- <meta property="fb:app_id" content="AppID"> -->
+    <meta name="twitter:card" content="summary_large_image or summary" />
+    <!-- <meta name="twitter:site" content="@moshamusha2010" /> -->
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL" />
+
+    <!-- fonts -->
+
+    <!-- noto sans jp  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- noto sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- poppin  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- noto serif  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Zen Kaku Gothic New -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <base href="./assets/" />
+    <link rel="stylesheet" href="css/import.css" />
+
+    <!-- js -->
+    <!-- Alpine -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js" defer></script>
+    <script src="js/common.js" defer></script>
+</head>
+
+    <body>
+
+        <div class="container">
+             
+                <div class="secondcontainer">
+                    <div class="header">
+                        <img src="./img/logo.png" alt="">
+                        <h1>お知らせ</h1>
+                    </div>
+       
+                    <div class="tabbox">
+                         <div class="contentbox">
+                              <ul class="tabmenu">
+                                <li class="tab_item"><a href="" class="tablink active" data-target="#tabone">&#9642;<span class="btntext">テキス</span></a></li>
+                                <li class="tab_item"><a href="" class="tablink" data-target="#tabtwo">&#9642;<span class="btntext">テキステキステキス</span></a></li>
+                                <li class="tab_item"><a href="" class="tablink" data-target="#tabthree">&#9642;<span class="btntext">テキステキステキス</span></a></li>
+                                <li class="tab_item"><a href="" class="tablink" data-target="#tabfour">&#9642;<span class="btntext">テキステキステキス</span></a></li>
+                              </ul>
+
+                              <div id="tabone" class="tabchild show">
+
+                                <div class="row">
+                                    <div class="col-2">
+                                      <h3 class="date">2024年7月1日</h3>
+                                       <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+  
+                                      <div class="col-10">
+                                          <div class="labelcontainer">
+                                              <div class="label zenkakumedium fz-12">
+                                                  開催日
+                                              </div>
+                                              
+                                              <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                          </div>
+  
+                                          <p class="zenkakumedium fz-16">テキステキステキステキステキステキス</p>
+  
+                                          <div>
+                                              <img src="./icons/house.png" alt="">
+  
+                                              <a href="" class="notosansjpmedium fz-14">テキステキステキステキステキステキステキステキステキステキス</a>
+                                          </div>
+  
+                                      </div>
+  
+                                      
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-2">
+                                    <h3 class="date">2024年7月1日</h3>
+                                     <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                  </div>
+  
+                                    <div class="col-10">
+                                        <div class="labelcontainer">
+                                            <div class="label zenkakumedium fz-12">
+                                                開催日
+                                            </div>
+                                            
+                                            <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                        </div>
+  
+                                        <p class="zenkakumedium fz-16">テキステキステキステキステキステキス</p>
+  
+                                        <div>
+                                            <img src="./icons/house.png" alt="">
+  
+                                            <a href="" class="notosansjpmedium fz-14">テキステキステキステキステキステキステキステキステキステキス</a>
+                                        </div>
+  
+                                    </div>
+  
+                                    
+                                </div>
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                            <div class="labelcontainer">
+                                                <div class="label zenkakumedium fz-12">
+                                                    開催日
+                                                </div>
+                                                
+                                                <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                            </div>
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                        
+    
+                                        </div>
+    
+                                        
+                                </div>
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                        
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキ</p>
+    
+                                        
+    
+                                        </div>
+    
+                                        
+                                </div>
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                        
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                            
+    
+                                        </div>
+    
+                                        
+                                </div>
+
+                              </div>
+
+                              <div id="tabtwo" class="tabchild">
+
+                                
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                            <div class="labelcontainer">
+                                                <div class="label zenkakumedium fz-12">
+                                                    開催日
+                                                </div>
+                                                
+                                                <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                            </div>
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                        
+    
+                                        </div>
+    
+                                        
+                                </div>
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                        
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                        
+    
+                                        </div>
+    
+                                        
+                                </div>
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                        
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                            
+    
+                                        </div>
+    
+                                        
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-2">
+                                      <h3 class="date">2024年7月1日</h3>
+                                       <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+  
+                                      <div class="col-10">
+                                          <div class="labelcontainer">
+                                              <div class="label zenkakumedium fz-12">
+                                                  開催日
+                                              </div>
+                                              
+                                              <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                          </div>
+  
+                                          <p class="zenkakumedium fz-16">テキステキステキステキステキステキス</p>
+  
+                                          <div>
+                                              <img src="./icons/house.png" alt="">
+  
+                                              <a href="" class="notosansjpmedium fz-14">テキステキステキステキステキステキステキステキステキステキス</a>
+                                          </div>
+  
+                                      </div>
+  
+                                      
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-2">
+                                    <h3 class="date">2024年7月1日</h3>
+                                     <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                  </div>
+  
+                                    <div class="col-10">
+                                        <div class="labelcontainer">
+                                            <div class="label zenkakumedium fz-12">
+                                                開催日
+                                            </div>
+                                            
+                                            <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                        </div>
+  
+                                        <p class="zenkakumedium fz-16">テキステキステキステキステキステキス</p>
+  
+                                        <div>
+                                            <img src="./icons/house.png" alt="">
+  
+                                            <a href="" class="notosansjpmedium fz-14">テキステキステキステキステキステキステキステキステキステキス</a>
+                                        </div>
+  
+                                    </div>
+  
+                                    
+                                </div>
+                                
+                              </div>
+
+
+                              <div id="tabthree" class="tabchild">
+
+                                <div class="row">
+                                    <div class="col-2">
+                                      <h3 class="date">2024年7月1日</h3>
+                                       <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+  
+                                      <div class="col-10">
+                                          <div class="labelcontainer">
+                                              <div class="label zenkakumedium fz-12">
+                                                  開催日
+                                              </div>
+                                              
+                                              <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                          </div>
+  
+                                          <p class="zenkakumedium fz-16">テキステキステキステキステキステキス</p>
+  
+                                          <div>
+                                              <img src="./icons/house.png" alt="">
+  
+                                              <a href="" class="notosansjpmedium fz-14">テキステキステキステキステキステキステキステキステキステキス</a>
+                                          </div>
+  
+                                      </div>
+  
+                                      
+                                </div>
+  
+                                
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                            <div class="labelcontainer">
+                                                <div class="label zenkakumedium fz-12">
+                                                    開催日
+                                                </div>
+                                                
+                                                <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                            </div>
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                        
+    
+                                        </div>
+    
+                                        
+                                </div>
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                        
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                        
+    
+                                        </div>
+    
+                                        
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-2">
+                                      <h3 class="date">2024年7月1日</h3>
+                                       <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                      <div class="col-10">
+                                          <div class="labelcontainer">
+                                              <div class="label zenkakumedium fz-12">
+                                                  開催日
+                                              </div>
+                                              
+                                              <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                          </div>
+    
+                                          <p class="zenkakumedium fz-16">テキステキステキステキステキステキス</p>
+    
+                                          <div>
+                                              <img src="./icons/house.png" alt="">
+    
+                                              <a href="" class="notosansjpmedium fz-14">テキステキステキステキステキステキステキステキステキステキス</a>
+                                          </div>
+    
+                                      </div>
+    
+                                      
+                                </div>
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                        
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                            
+    
+                                        </div>
+    
+                                        
+                                </div>
+                                
+                              </div>
+
+                              <div id="tabfour" class="tabchild">
+
+                                
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                            <div class="labelcontainer">
+                                                <div class="label zenkakumedium fz-12">
+                                                    開催日
+                                                </div>
+                                                
+                                                <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                            </div>
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                        
+    
+                                        </div>
+    
+                                        
+                                </div>
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                        
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                        
+    
+                                        </div>
+    
+                                        
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-2">
+                                      <h3 class="date">2024年7月1日</h3>
+                                       <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+  
+                                      <div class="col-10">
+                                          <div class="labelcontainer">
+                                              <div class="label zenkakumedium fz-12">
+                                                  開催日
+                                              </div>
+                                              
+                                              <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                          </div>
+  
+                                          <p class="zenkakumedium fz-16">テキステキステキステキステキステキス</p>
+  
+                                          <div>
+                                              <img src="./icons/house.png" alt="">
+  
+                                              <a href="" class="notosansjpmedium fz-14">テキステキステキステキステキステキステキステキステキステキス</a>
+                                          </div>
+  
+                                      </div>
+  
+                                      
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-2">
+                                    <h3 class="date">2024年7月1日</h3>
+                                     <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                  </div>
+  
+                                    <div class="col-10">
+                                        <div class="labelcontainer">
+                                            <div class="label zenkakumedium fz-12">
+                                                開催日
+                                            </div>
+                                            
+                                            <p class="datetext poppinmedium">2024年06月14日、17日～19日及び07月19日、20日</p>
+                                        </div>
+  
+                                        <p class="zenkakumedium fz-16">テキステキステキステキステキステキス</p>
+  
+                                        <div>
+                                            <img src="./icons/house.png" alt="">
+  
+                                            <a href="" class="notosansjpmedium fz-14">テキステキステキステキステキステキステキステキステキステキス</a>
+                                        </div>
+  
+                                    </div>
+  
+                                    
+                                </div>
+  
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h3 class="date">2024年7月1日</h3>
+                                        <p class="zenkakumedium fz-16">&#9642; テキス</p>
+                                    </div>
+    
+                                        <div class="col-10">
+                                        
+    
+                                            <p class="zenkakumedium fz-16">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    
+                                            
+    
+                                        </div>
+    
+                                        
+                                </div>
+                                
+                              </div>
+                              
+                            <a href="" class="btn">新着情報一覧を見る
+
+                                <div class="btnicon"><img src="./icons/arrow.png" alt=""></div>
+                            </a>
+
+
+                             
+                         </div> 
+                    </div>
+                </div>
+             
+        </div>
+
+    </body>
+
+</html>

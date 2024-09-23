@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+:root {
+  --text-color: #000;
+  --btnprimary: #eff6fc;
+  --btn-color: #2153a1;
+}
+
+/* ===============================
+Top Page
+=============================== */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* background-color: aquamarine; */
+}
+
+.container {
+  height: auto;
+  min-height: 1274px;
+
+  border-radius: 0px 80px 80px 0px;
+
+  background: rgb(224, 237, 250);
+  background: linear-gradient(
+    133deg,
+    rgba(224, 237, 250, 1) 0%,
+    rgba(224, 237, 250, 1) 30%,
+    rgba(198, 226, 224, 1) 70%,
+    rgba(201, 227, 227, 1) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zenkakumedium {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+}
+
+.poppinmedium {
+  font-family: "Poppin";
+  font-weight: 500;
+}
+
+.notosansjpmedium {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+}
+
+.secondcontainer {
+  min-width: 1440px;
+  min-height: 1274px;
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 58px;
+  margin-left: 120px;
+}
+
+.container .header img {
+  width: 30px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.header h1 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+}
+
+.tabbox {
+  width: 1160px;
+  max-width: 1160px;
+
+  height: 1037px;
+  min-height: 1037px;
+
+  background-color: white;
+  margin-left: 120px;
+  margin-right: 80px;
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.contentbox {
+  min-width: 940px;
+
+  height: auto;
+  min-height: 887px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tabmenu {
+  display: flex;
+
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.tab_item {
+  width: 232px;
+  height: 64px;
+  background: var(--btnprimary);
+  list-style-type: none;
+  border-radius: 8px;
+}
+
+.tablink {
+  width: 232px;
+  height: 64px;
+  background: var(--btnprimary);
+  display: block;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  text-align: center;
+  line-height: 64px;
+  text-decoration: none;
+  color: black;
+  border-radius: 8px;
+}
+
+.tabchild {
+  display: none;
+}
+
+.tabchild.show {
+  display: block;
+}
+
+.tablink.active {
+  background-color: var(--btn-color);
+  color: white;
+}
+
+.btntext {
+  margin-left: 20px;
+}
+
+.row {
+  width: 940px;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+
+  border-bottom: 1px dotted black;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.col-4 {
+  background-color: blue;
+}
+
+.col-8 {
+  background-color: wheat;
+}
+
+.label {
+  width: 50px;
+  height: 20px;
+  background-color: var(--btn-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  margin-right: 10px;
+}
+
+.labelcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.datetext {
+  font-size: 16px;
+
+  margin: 7px 0px;
+
+  color: var(--btn-color);
+}
+
+.col-2 .date {
+  margin: 7px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppin";
+}
+
+hr {
+  height: 1px;
+}
+
+.btn {
+  width: 210px;
+  height: 55px;
+
+  border-radius: 25px;
+
+  display: flex;
+  /* justify-content: start; */
+  align-items: center;
+
+  color: white;
+
+  padding-left: 30px;
+
+  background: rgb(0, 71, 122);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 71, 122, 1) 0%,
+    rgba(0, 91, 157, 1) 30%,
+    rgba(19, 137, 142, 1) 70%,
+    rgba(1, 116, 114, 1) 100%
+  );
+
+  position: relative;
+
+  text-decoration: none;
+  margin-top: 60px;
+}
+
+.btnicon {
+  width: 36px;
+  height: 36px;
+
+  background-color: #fff;
+
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnicon img {
+  width: 15px;
+  height: 2px;
+}
+
+a {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .secondcontainer {
+    width: 90%;
+    margin: auto;
+  }
+
+  .tabbox {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contentbox {
+    width: 90%;
+  }
+
+  .tabmenu {
+    flex-wrap: wrap;
+  }
+}
