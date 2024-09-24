@@ -24,6 +24,10 @@ body {
   align-self: center;
 }
 
+/* p {
+  margin: 0;
+} */
+
 .container {
   height: auto;
   min-height: 1274px;
@@ -171,10 +175,6 @@ ul {
   color: white;
 }
 
-.btntext {
-  margin-left: 20px;
-}
-
 .row {
   width: 940px;
   display: grid;
@@ -209,6 +209,10 @@ ul {
   margin: 7px 0px;
 
   color: var(--btn-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .date {
@@ -309,6 +313,99 @@ a {
   color: var(--btn-color);
 }
 
+.houseiconbox {
+  display: flex;
+}
+
+.houseiconimg {
+  width: 20px;
+  height: 15px;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    grid-template-columns: 1fr 80px;
+  }
+
+  .pclink {
+    display: none;
+  }
+
+  .splink {
+    display: inline;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .header {
+    margin: 10px 10px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .header img {
+    width: 20px;
+    height: 30px;
+  }
+
+  .row {
+    width: 94%;
+    grid-template-columns: 1fr;
+  }
+
+  .secondcontainer {
+    width: 95%;
+    min-width: 95%;
+    min-height: auto;
+    margin: 30px auto;
+  }
+
+  .tabbox {
+    width: 95%;
+    min-width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0px;
+  }
+
+  .contentbox {
+    width: 100%;
+    min-width: 100%;
+    padding: 22px 18px;
+  }
+
+  .tabmenu {
+    display: flex;
+  }
+
+  .row {
+    width: 92%;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin: auto;
+  }
+
+  .tablink,
+  .tab_item {
+    width: 150px;
+    height: 56px;
+    font-size: 12px;
+  }
+
+  .labelcontainer {
+    align-items: center;
+  }
+
+  .datetext {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   body {
     grid-template-columns: 1fr 80px;
@@ -383,14 +480,6 @@ a {
     font-size: 12px;
   }
 
-  .btntext {
-    margin-left: 5px;
-  }
-
-  .labelcontainer {
-    align-items: start;
-  }
-
   .datetext {
     font-size: 12px;
     margin-top: 10px;
@@ -457,6 +546,7 @@ a {
   .tabmenu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 95%;
   }
 
   .row {
@@ -466,13 +556,10 @@ a {
 
   .tablink,
   .tab_item {
-    width: 160px;
+    /* width: 160px; */
+    width: 100%;
     height: 56px;
     font-size: 14px;
-  }
-
-  .btntext {
-    margin-left: 5px;
   }
 
   .labelcontainer {
@@ -538,14 +625,17 @@ a {
   }
 
   .tabmenu {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
-  .btntext {
-    margin-left: 5px;
+  .tablink,
+  .tab_item {
+    width: 160px;
+
+    height: 56px;
+    font-size: 14px;
   }
 
   .date {
@@ -563,7 +653,7 @@ a {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 349px) {
   .datetext {
     font-size: 10px;
   }
