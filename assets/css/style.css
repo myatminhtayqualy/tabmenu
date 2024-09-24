@@ -4,6 +4,7 @@
   --text-color: #000;
   --btnprimary: #eff6fc;
   --btn-color: #2153a1;
+  --hover-color: #77a3ea;
 }
 
 /* ===============================
@@ -11,17 +12,16 @@ Top Page
 =============================== */
 
 body {
-  /* height: auto;
-  min-height: 140px; */
-
+  height: auto;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 80px;
   grid-template-rows: 1fr;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* background-color: aquamarine; */
+  justify-self: center;
+  align-self: center;
 }
 
 .container {
@@ -90,13 +90,14 @@ body {
   width: 1160px;
   max-width: 1160px;
 
-  height: 1037px;
-  min-height: 1037px;
+  height: auto;
 
   background-color: white;
   margin-left: 120px;
   margin-right: 80px;
   border-radius: 40px;
+
+  padding: 70px 0px;
 
   display: flex;
   justify-content: center;
@@ -153,6 +154,10 @@ ul {
   border-radius: 8px;
 }
 
+.tablink:hover {
+  background-color: var(--hover-color);
+}
+
 .tabchild {
   display: none;
 }
@@ -178,14 +183,6 @@ ul {
   border-bottom: 1px dotted black;
   padding-bottom: 30px;
   padding-top: 20px;
-}
-
-.col-4 {
-  background-color: blue;
-}
-
-.col-8 {
-  background-color: wheat;
 }
 
 .label {
@@ -232,10 +229,11 @@ hr {
   border-radius: 25px;
 
   display: flex;
-  /* justify-content: start; */
+
   align-items: center;
 
   color: white;
+  overflow: hidden;
 
   padding-left: 30px;
 
@@ -254,6 +252,24 @@ hr {
   margin-top: 60px;
 }
 
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+
+  border-radius: 25px;
+  background-color: rgba(0, 71, 122, 1);
+  z-index: 0;
+  transition: width 0.4s ease;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
 .btnicon {
   width: 36px;
   height: 36px;
@@ -268,6 +284,12 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  z-index: 1;
+}
+
+.btn span {
+  z-index: 1;
 }
 
 .btnicon img {
@@ -287,10 +309,11 @@ a {
   color: var(--btn-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 80px;
   }
+
   .pclink {
     display: none;
   }
@@ -300,12 +323,11 @@ a {
   }
 
   .container {
-    border-radius: 0;
     display: block;
   }
 
   .header {
-    margin: 10px 0;
+    margin: 10px 10px;
   }
 
   .header h1 {
@@ -333,8 +355,8 @@ a {
     width: 95%;
     min-width: 95%;
     height: auto;
-    min-height: 1037px;
     margin: 0 auto;
+    padding: 50px 0px;
   }
 
   .contentbox {
@@ -345,9 +367,96 @@ a {
 
   .tabmenu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  }
+
+  .row {
+    width: 92%;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin: auto;
+  }
+
+  .tablink,
+  .tab_item {
+    width: 160px;
+    height: 56px;
+    font-size: 14px;
+  }
+
+  .btntext {
+    margin-left: 5px;
+  }
+
+  .labelcontainer {
+    align-items: start;
+  }
+
+  .datetext {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .pclink {
+    display: none;
+  }
+
+  .splink {
+    display: inline;
+  }
+
+  .container {
+    border-radius: 0;
+    display: block;
+  }
+
+  .header {
+    margin: 10px 10px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .header img {
+    width: 20px;
+    height: 30px;
+  }
+
+  .row {
+    width: 94%;
+    grid-template-columns: 1fr;
+  }
+
+  .secondcontainer {
+    width: 95%;
+    min-width: 95%;
+    min-height: auto;
+    margin: 30px auto;
+  }
+
+  .tabbox {
+    width: 95%;
+    min-width: 95%;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 20px 0px;
+  }
+
+  .contentbox {
+    width: 100%;
+    min-width: 100%;
+    padding: 22px 18px;
+  }
+
+  .tabmenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .row {
@@ -357,7 +466,7 @@ a {
 
   .tablink,
   .tab_item {
-    width: 150px;
+    width: 160px;
     height: 56px;
     font-size: 14px;
   }
@@ -417,8 +526,9 @@ a {
     width: 95%;
     min-width: 95%;
     height: auto;
-    min-height: 1037px;
+
     margin: 0 auto;
+    padding: 20px 0px;
   }
 
   .contentbox {
@@ -432,13 +542,6 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-
-  .tablink,
-  .tab_item {
-    width: 140px;
-    height: 50px;
-    font-size: 14px;
   }
 
   .btntext {
@@ -457,5 +560,18 @@ a {
   .datetext {
     font-size: 12px;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .datetext {
+    font-size: 10px;
+  }
+
+  .tablink,
+  .tab_item {
+    width: 140px;
+    height: 50px;
+    font-size: 10px;
   }
 }
