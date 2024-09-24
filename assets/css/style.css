@@ -226,7 +226,7 @@ hr {
   width: 210px;
   height: 55px;
 
-  border-radius: 25px;
+  border-radius: 32px;
 
   display: flex;
 
@@ -378,9 +378,9 @@ a {
 
   .tablink,
   .tab_item {
-    width: 160px;
+    width: 150px;
     height: 56px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .btntext {
